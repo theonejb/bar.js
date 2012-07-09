@@ -353,8 +353,8 @@
                 var max = -1;
                 for (var i = 0; i < data.length; i++) {
                     for (var j = 0; j < data[i].length; j++) {
-                        var data_obj = this.get_data_point(data[i]);
-                        max = data_obj > max ? data_obj : max;
+                        var data_obj = this.get_data_point(data[i][j]);
+                        max = data_obj.val > max ? data_obj.val : max;
                     }
                 }
             }
